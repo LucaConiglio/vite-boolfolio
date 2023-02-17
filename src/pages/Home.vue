@@ -1,37 +1,23 @@
 <template>
-  <h1>Questa é la Home</h1>
+  <section>
+    <div class="container">
+      <h1>Questa é la Home</h1>
+    </div>
+  </section>
 
 </template>
 
 <script>
-import axios from 'axios';
 
-export default {
-  
-  name: "Home",
-  data() {
-    return {
-      backendUrl: "http://127.0.0.1:8000",
-
-      projects: []
-
-    };
-  },
-  methods: {
-    fecthProjects() {
-      axios.get(this.backendUrl + "/api/projects").then((resp) => {
-        this.projects = resp.data
-        
-        console.log(this.projects);
-      });
-    }
-  },
-  mounted() {
-    this.fecthProjects()
-    
-  },
-}
 </script>
-<style>
+<style scoped lang="scss">
+
+section{
   
+  padding-top: 2rem;
+
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(to right, #1E2D4F, #FFFFFF, #6DCFF6);
+}
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <section>
  <div class="container">
     <h1>Lista post</h1>
 
@@ -34,6 +35,7 @@
       </tbody>
     </table>
   </div>
+</section>
 </template>
 <script>
 import axios from 'axios';
@@ -63,5 +65,5 @@ export default {
 }
 </script>
 <style lang="scss">
-  
+
 </style>

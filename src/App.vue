@@ -19,13 +19,13 @@ data() {
 </script>
 
 <template>
-  <div class="container">
+  
   <TheHeader></TheHeader>
 
   <router-view></router-view>
 
   
-</div>
+
 </template>
 
 <style lang="scss">

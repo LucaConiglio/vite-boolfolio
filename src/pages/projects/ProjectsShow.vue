@@ -25,14 +25,26 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  
+  
+  <div class="container my-3">
+    
     <h1>Pagina dettagli post {{ $route.params.id }}</h1>
     <h2>{{ projects.name }}</h2>
 
-    <div v-if="projects.cover_img">
+    <div v-if="projects.cover_img" class="d-flex justify-content-center align-items-center">
       <img :src="backendUrl + '/storage/' + projects.cover_img" alt="" class="img-fluid"/>
     </div>
 
     <p class="lead">{{ projects.description }}</p>
   </div>
+
 </template>
+
+<style scoped lang="scss">
+img{
+  width: 600px;
+}
+
+
+</style>

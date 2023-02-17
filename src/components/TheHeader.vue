@@ -1,4 +1,5 @@
 <template>
+  <section>
   <h1 class="text-center py-3 text-warning">Boolfolio</h1>
 
   <ul class="nav justify-content-center">
@@ -10,7 +11,7 @@
   </li>
 </ul>
 
-
+</section>
 </template>
 <script>
 export default {
@@ -33,5 +34,8 @@ export default {
 }
 </script>
 <style lang="scss">
-  
+ section{
+  background: linear-gradient(to right, #1E2D4F, #FFFFFF, #6DCFF6);
+  padding-bottom: 1rem;
+}
 </style>
