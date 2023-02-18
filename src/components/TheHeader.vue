@@ -1,10 +1,10 @@
 <template>
-  <section>
+  <section class="headerSection">
   <h1 class="text-center py-3 text-warning">Boolfolio</h1>
 
   <ul class="nav justify-content-center">
-  <li class="nav-item px-3" v-for="(link, index) in menuRouts" :key="index">
-    <router-link :to="{ name: link.routeName }">
+  <li class="mx-3 btn btn-info btn-outline-warning" v-for="(link, index) in menuRouts" :key="index">
+    <router-link class="text-decoration-none" :to="{ name: link.routeName }">
       {{ link.label }}
     </router-link>
     <!-- <a class="nav-link active" aria-current="page" href="#">{{ link.label }}</a> -->
@@ -34,8 +34,15 @@ export default {
 }
 </script>
 <style lang="scss">
- section{
-  background: linear-gradient(to right, #1E2D4F, #FFFFFF, #6DCFF6);
+ .headerSection{
+  background-color: #d6e8f4;
+  background-image: url("https://eitrawmaterials.eu/wp-content/uploads/2021/09/KAVA-Call-WebHeader.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
   padding-bottom: 1rem;
+  h1{
+    font-size: 70px;
+  }
 }
 </style>

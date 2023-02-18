@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Home from "./pages/Home.vue";
 import ProjectsIndex from "./pages/projects/Index.vue";
-import ProjectsShow from "./pages/projects/ProjectsShow.vue"
+import ProjectsShow from "./pages/projects/ProjectsShow.vue";
+import NotFound404 from "./pages/NotFound.vue";
 // import PostsShowPage from "./pages/posts/Show.vue";
 // ... import di altri componenti
 
@@ -25,6 +26,13 @@ const router = createRouter({
       path: "/projects/:id",
       name: "projects.show",
       component: ProjectsShow
+     }, 
+     {
+
+      path: "/:catchAll(.*)",
+      name: "NotFound",
+      component: NotFound404
+
      }
 		// ... altre rotte
     // {
