@@ -7,9 +7,9 @@
           <div class="card" style="width: 18rem;">
             <img v-if="project.cover_img" :src="store.backendUrl + '/storage/' + project.cover_img" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">project.name</h5>
-              <p class="card-text">project.description</p>
-              <p class="card-text">project.github_link</p>
+              <h5 class="card-title">{{project.name}}</h5>
+              <p class="card-text">{{project.description}}</p>
+              <p class="card-text">{{project.github_link}}</p>
              
             </div>
           </div>
@@ -44,7 +44,7 @@ export default {
 
 
   width: 100%;
-  height: 79.8vh;
+  height: calc(100vh - 177.77px);
   background: linear-gradient(to right, #1E2D4F, #FFFFFF, #6DCFF6);
 }
 </style>

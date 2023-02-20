@@ -21,7 +21,7 @@
               </div>
             </td>
             <!-- <router-link :to="{ name: 'posts.show', params: {id: post.id} }">{{ post.title }}</router-link> -->
-            <td>{{ project.name }}</td>
+            <td>{{project.name}}</td>
             <td>{{ project.description }}</td>
             <td>{{ project.github_link }}</td>
             <td><router-link :to="{ name: 'projects.show', params: { id: project.id } }">show</router-link></td>
@@ -54,9 +54,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.indexSection {
-  
-
+.indexSection{
+  height: calc(100vh - 177.77px);
+  background: linear-gradient(to bottom, #FFFFFF,#fff9e4,#fbf3dc, #fff788);
  
 }
 </style>
